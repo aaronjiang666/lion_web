@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar">
-    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container" />
-    <breadcrumb />
-    <changePwd ref="changePassword" @save-finished="logout" />
+  <div class="navbar" style="background-color: #fff;height: 50px;">
+    <!--<hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container" />
+    --><breadcrumb />
+    <!--<changePwd ref="changePassword" @save-finished="logout" />
     <el-dropdown class="avatar-container" trigger="click">
       <div class="avatar-wrapper">
         <img src="@/assets/logo.png" class="user-avatar">
@@ -21,7 +21,7 @@
           <span style="display:block;" @click="logout">退出</span>
         </el-dropdown-item>
       </el-dropdown-menu>
-    </el-dropdown>
+    </el-dropdown>-->
   </div>
 </template>
 
@@ -29,13 +29,11 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
-import ChangePwd from '@/components/User/changePassword'
 
 export default {
   components: {
     Breadcrumb,
-    Hamburger,
-    ChangePwd
+    Hamburger
   },
   data() {
     return {
@@ -62,12 +60,6 @@ export default {
         this.$router.push({ path: '/' })
         location.reload() // 为了重新实例化vue-router对象 避免bug
       })
-    },
-    changePwd() {
-      this.user.id = this.info.id
-      this.user.name = this.info.name
-      this.user.loginName = this.info.loginName
-      this.$refs.changePassword.$emit('openChangePasswordDialog', this.user)
     }
   }
 }
@@ -101,7 +93,7 @@ export default {
       position: relative;
       line-height: initial;
       .user-avatar {
-        width: 60px;
+        width: 40px;
         height: 40px;
         border-radius: 10px;
       }

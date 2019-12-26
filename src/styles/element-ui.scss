@@ -28,3 +28,101 @@
     }
   }
 }
+
+
+
+// payne
+// start 菜单
+.el-menu--popup {
+  min-width: 130px; /* 菜单最小宽度*/
+}
+
+/* 改elementui源css */
+.el-menu--horizontal .el-menu-item {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  color: #909399
+}
+
+.el-menu--horizontal .el-menu-item a,.el-menu--horizontal .el-menu-item a:hover {
+  color: inherit
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  background-color: #fff
+}
+
+.el-menu--horizontal .el-submenu {
+  float: left
+}
+
+.el-menu--horizontal .el-submenu:focus,.el-menu--horizontal .el-submenu:hover {
+  outline: none
+}
+
+.el-menu--horizontal .el-submenu:focus .el-submenu__title,.el-menu--horizontal .el-submenu:hover .el-submenu__title {
+  color: #303133
+}
+
+.el-menu--horizontal .el-submenu.is-active .el-submenu__title {
+  border-bottom: 2px solid #00A370;
+  color: #303133
+}
+
+.el-menu--horizontal .el-submenu .el-submenu__title {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid transparent;
+  color: #909399
+}
+
+.el-menu--horizontal .el-submenu .el-submenu__title:hover {
+  background-color: #fff
+}
+
+.el-menu--horizontal .el-submenu .el-submenu__icon-arrow {
+  position: static;
+  vertical-align: middle;
+  margin-left: 8px;
+  margin-top: -3px
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,.el-menu--horizontal .el-menu .el-submenu__title {
+  background-color: #fff;
+  float: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  color: #909399
+}
+
+.el-menu--horizontal .el-menu .el-menu-item.is-active,.el-menu--horizontal .el-menu .el-submenu.is-active .el-submenu__title {
+  color: #303133
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus,.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  outline: none;
+  color: #303133
+}
+// end 菜单
+
+// start button
+.el-button--primary {
+  border-color: #4aa09b; // 按钮变宽颜色
+  background-color: #00A370; // 按钮颜色
+  &:hover {
+    border-color: #408257;
+    background-color: #2D6D69;
+  }
+}
+// end button
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: #00A370;
+  color: #fff;
+}
+.svg-icon{
+  margin-right: 6px;
+}
