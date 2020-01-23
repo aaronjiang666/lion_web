@@ -39,12 +39,12 @@
             <span>对接帮助</span>
           </div>
           <div style="height: 300px">
-            <a class="api-link" :href="'http://api.77feipay.com/doc/支付系统API文档-2.0.0.pdf'" target="_blank" type="success">
-              点击获取Api文档V2(推荐)
+            <a class="api-link" :href="'http://apitongdapay.com/doc/支付系统API文档-2.0.0.pdf'" target="_blank" type="success">
+              点击获取Api文档
             </a>
             <hr/>
-            <a class="api-link" :href="'http://api.77feipay.com/doc/java-api-demo.zip'" target="_blank" type="success">
-              V2版本ApiDemo(Java)
+            <a class="api-link" :href="'http://apitongdapay.com/doc/java-api-demo.zip'" target="_blank" type="success">
+              对接示例ApiDemo(Java)
             </a>
           </div>
         </el-card>
