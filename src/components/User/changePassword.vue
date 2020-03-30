@@ -4,6 +4,7 @@
     :visible.sync="dialogVisible"
     title="修改密码"
     width="560px"
+    append-to-body
     @open="handleDialogOpen()">
     <div slot="title" class="dialog-header">修改密码</div>
     <el-form
